@@ -32,3 +32,6 @@ demo_edit
 lex_lib_demo
 test_loop
 link*.res
+
+.claude/
+PLAN.md
