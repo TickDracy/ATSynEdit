@@ -7082,8 +7082,8 @@ begin
   ActionId:= EditorMouseActionId(FMouseActions, Shift);
 
   {$ifndef windows}
-  //if ActionId<>TATEditorMouseAction.None then
-  //  Writeln('Mouse: ', cEditorMouseActionStr[ActionId]);
+  if ActionId<>TATEditorMouseAction.None then
+    Writeln('Mouse: ', cEditorMouseActionStr[ActionId]);
   {$endif}
 
   if FMinimapVisible and ATPointInRect(FRectMinimap, PosCoord) then
